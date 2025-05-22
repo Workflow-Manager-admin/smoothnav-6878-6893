@@ -1,19 +1,36 @@
 /* SmoothNav Component Styles */
 
+/* Theme variables */
+.theme-dark {
+  --nav-bg: var(--kavia-dark);
+  --nav-scrolled-bg: rgba(26, 26, 26, 0.95);
+  --nav-text: var(--text-color);
+  --nav-text-hover: var(--kavia-orange);
+  --nav-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.theme-light {
+  --nav-bg: #ffffff;
+  --nav-scrolled-bg: rgba(255, 255, 255, 0.95);
+  --nav-text: #333333;
+  --nav-text-hover: var(--kavia-orange);
+  --nav-shadow: rgba(0, 0, 0, 0.1);
+}
+
 .smooth-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--kavia-dark);
+  background-color: var(--nav-bg);
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px var(--nav-shadow);
 }
 
 .smooth-nav--scrolled {
-  background-color: rgba(26, 26, 26, 0.95);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--nav-scrolled-bg);
+  box-shadow: 0 4px 20px var(--nav-shadow);
 }
 
 .smooth-nav__container {
