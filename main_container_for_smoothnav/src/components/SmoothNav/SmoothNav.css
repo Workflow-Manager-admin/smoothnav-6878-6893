@@ -1,0 +1,210 @@
+/* SmoothNav Component Styles */
+
+.smooth-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--kavia-dark);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.smooth-nav--scrolled {
+  background-color: rgba(26, 26, 26, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.smooth-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.smooth-nav__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.smooth-nav__logo {
+  color: var(--kavia-orange);
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.smooth-nav:hover .smooth-nav__logo {
+  transform: rotate(15deg);
+}
+
+.smooth-nav__brand-name {
+  color: var(--text-color);
+}
+
+.smooth-nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+.smooth-nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+
+.smooth-nav__link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 8px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.smooth-nav__link:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--kavia-orange);
+  transition: width 0.3s ease;
+  visibility: hidden;
+}
+
+.smooth-nav__link:hover:before,
+.smooth-nav__link--active:before {
+  width: 100%;
+  visibility: visible;
+}
+
+.smooth-nav__link:hover {
+  color: var(--kavia-orange);
+}
+
+.smooth-nav__link--active {
+  color: var(--kavia-orange);
+}
+
+/* Mobile hamburger button */
+.smooth-nav__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+}
+
+.smooth-nav__hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.smooth-nav__hamburger--open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.smooth-nav__hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.smooth-nav__hamburger--open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .smooth-nav__hamburger {
+    display: flex;
+  }
+  
+  .smooth-nav__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.98);
+    height: 100vh;
+    width: 250px;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    transform: translateX(100%);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 0;
+    display: block;
+    overflow-y: auto;
+  }
+  
+  .smooth-nav__menu--open {
+    transform: translateX(0);
+  }
+  
+  .smooth-nav__list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 24px;
+    gap: 16px;
+  }
+  
+  .smooth-nav__item {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInItem 0.5s forwards;
+    animation-delay: calc(0.1s * var(--i, 0));
+  }
+  
+  .smooth-nav__menu--open .smooth-nav__item {
+    animation: fadeInItem 0.5s forwards;
+    animation-delay: calc(0.1s * var(--i, 0));
+  }
+  
+  .smooth-nav__link {
+    width: 100%;
+    display: block;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInItem {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for navigation menu items with delayed appearance */
+.smooth-nav__item:nth-child(1) { --i: 1; }
+.smooth-nav__item:nth-child(2) { --i: 2; }
+.smooth-nav__item:nth-child(3) { --i: 3; }
+.smooth-nav__item:nth-child(4) { --i: 4; }
+.smooth-nav__item:nth-child(5) { --i: 5; }
+.smooth-nav__item:nth-child(6) { --i: 6; }
