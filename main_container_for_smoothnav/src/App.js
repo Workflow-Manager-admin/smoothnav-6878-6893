@@ -18,6 +18,8 @@ function App() {
         navItems={navItems} 
         logo="*" 
         brandName="SmoothNav" 
+        showThemeToggle={true}
+        defaultTheme="dark"
       />
 
       {/* Main content sections for navigation */}
