@@ -357,3 +357,6 @@ src/components/SmoothNav/index.js
   Line 25:3:  Parsing error: Unexpected token (25:3)
 
 webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
