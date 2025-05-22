@@ -1,6 +1,7 @@
 // PUBLIC_INTERFACE
 import React, { useState, useEffect } from 'react';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
+import { useThemeToggle } from '../../hooks/useThemeToggle';
 import './SmoothNav.css';
 
 /**
@@ -10,6 +11,8 @@ import './SmoothNav.css';
  * @param {string} props.logo - Logo content (text or component)
  * @param {string} props.brandName - Brand name to display next to logo
  * @param {Function} props.onNavItemClick - Optional callback for nav item clicks
+ * @param {boolean} props.showThemeToggle - Whether to show the theme toggle button
+ * @param {string} props.defaultTheme - Default theme to use ('light' or 'dark')
  * @returns {JSX.Element} - SmoothNav component
  */
 const SmoothNav = ({ 
@@ -17,10 +20,13 @@ const SmoothNav = ({
   logo = "*", 
   brandName = "KAVIA AI", 
   onNavItemClick = null,
+  showThemeToggle = true,
+  defaultTheme = 'dark'
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeItem, setActiveItem] = useState('');
   const { isPastThreshold } = useScrollPosition(60);
+  const { theme, toggleTheme } = useThemeToggle(defaultTheme);
 
   // Close mobile menu when window is resized beyond mobile breakpoint
   useEffect(() => {
