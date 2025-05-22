@@ -120,6 +120,21 @@ const SmoothNav = ({
                 </a>
               </li>
             ))}
+            
+            {/* Theme toggle button */}
+            {showThemeToggle && (
+              <li className="smooth-nav__item smooth-nav__item--theme-toggle">
+                <button 
+                  className="smooth-nav__theme-toggle"
+                  onClick={toggleTheme}
+                  aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                >
+                  <span className="smooth-nav__theme-icon">
+                    {theme === 'dark' ? '☀️' : '🌙'}
+                  </span>
+                </button>
+              </li>
+            )}
           </ul>
         </div>
       </div>

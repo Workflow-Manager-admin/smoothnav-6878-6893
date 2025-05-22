@@ -41,3 +41,6 @@ src/components/SmoothNav/index.js
   Line 29:18:  'toggleTheme' is assigned a value but never used  no-unused-vars
 
 webpack compiled with 1 warning
+Compiling...
+Compiled successfully!
+webpack compiled successfully
