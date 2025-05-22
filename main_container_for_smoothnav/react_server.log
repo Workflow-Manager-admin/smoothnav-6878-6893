@@ -138,3 +138,222 @@ src/components/SmoothNav/index.js
   Line 31:  Parsing error: Unexpected token (31:0)
 
 webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/SmoothNav/index.js
+Syntax error: Unexpected token (25:3) (25:3)
+ERROR in ./src/components/SmoothNav/index.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/src/components/SmoothNav/index.js: Unexpected token (25:3)
+
+  23 |   showThemeToggle = true,
+  24 |   defaultTheme = 'dark'
+> 25 | =======
+     |    ^
+  26 | =======
+  27 |
+  28 |   // Close mobile menu when window is resized beyond mobile breakpoint
+    at constructor (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11126:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOpBaseRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10663:34)
+    at FlowParserMixin.parseExprOpRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10658:21)
+    at FlowParserMixin.parseExprOp (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10624:27)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10585:17)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:7370:23)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5591:24)
+    at FlowParserMixin.parseObjectProperty (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11652:27)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11661:100)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5563:26)
+    at FlowParserMixin.parsePropertyDefinition (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11601:17)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11516:21)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11359:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5815:18)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11006:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+
+ERROR in [eslint] 
+src/components/SmoothNav/index.js
+  Line 25:3:  Parsing error: Unexpected token (25:3)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/SmoothNav/index.js
+Syntax error: Unexpected token (25:3) (25:3)
+ERROR in ./src/components/SmoothNav/index.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/src/components/SmoothNav/index.js: Unexpected token (25:3)
+
+  23 |   showThemeToggle = true,
+  24 |   defaultTheme = 'dark'
+> 25 | =======
+     |    ^
+  26 |
+  27 |   // Close mobile menu when window is resized beyond mobile breakpoint
+  28 |   useEffect(() => {
+    at constructor (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11126:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOpBaseRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10663:34)
+    at FlowParserMixin.parseExprOpRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10658:21)
+    at FlowParserMixin.parseExprOp (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10624:27)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10585:17)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:7370:23)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5591:24)
+    at FlowParserMixin.parseObjectProperty (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11652:27)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11661:100)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5563:26)
+    at FlowParserMixin.parsePropertyDefinition (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11601:17)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11516:21)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11359:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5815:18)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11006:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+
+ERROR in [eslint] 
+src/components/SmoothNav/index.js
+  Line 25:3:  Parsing error: Unexpected token (25:3)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/SmoothNav/index.js
+Syntax error: Unexpected token (25:3) (25:3)
+ERROR in ./src/components/SmoothNav/index.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/src/components/SmoothNav/index.js: Unexpected token (25:3)
+
+  23 |   showThemeToggle = true,
+  24 |   defaultTheme = 'dark'
+> 25 | =======
+     |    ^
+  26 |
+  27 |   // Close mobile menu when window is resized beyond mobile breakpoint
+  28 |   useEffect(() => {
+    at constructor (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11126:16)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOpBaseRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10663:34)
+    at FlowParserMixin.parseExprOpRightExpr (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10658:21)
+    at FlowParserMixin.parseExprOp (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10624:27)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10585:17)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:7370:23)
+    at FlowParserMixin.parseMaybeDefault (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5591:24)
+    at FlowParserMixin.parseObjectProperty (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11652:27)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11661:100)
+    at FlowParserMixin.parseObjPropValue (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5563:26)
+    at FlowParserMixin.parsePropertyDefinition (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11601:17)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11516:21)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11359:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:5815:18)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:11006:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/smoothnav-6878-6893/main_container_for_smoothnav/node_modules/@babel/parser/lib/index.js:10521:21)
+
+ERROR in [eslint] 
+src/components/SmoothNav/index.js
+  Line 25:3:  Parsing error: Unexpected token (25:3)
+
+webpack compiled with 2 errors

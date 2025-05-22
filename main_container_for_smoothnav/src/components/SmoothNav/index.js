@@ -22,12 +22,6 @@ const SmoothNav = ({
   onNavItemClick = null,
   showThemeToggle = true,
   defaultTheme = 'dark'
-}) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState('');
-  const { isPastThreshold } = useScrollPosition(60);
-  // Theme is used in the JSX below for conditional rendering
-  const { theme, toggleTheme } = useThemeToggle(defaultTheme);
 =======
 
   // Close mobile menu when window is resized beyond mobile breakpoint
