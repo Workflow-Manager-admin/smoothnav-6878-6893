@@ -13,6 +13,7 @@ body {
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 .app {
@@ -21,48 +22,74 @@ body {
   flex-direction: column;
 }
 
-.navbar {
-  background-color: var(--kavia-dark);
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 1.25rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo-symbol {
-  color: var(--kavia-orange);
-}
-
+/* Container */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
 }
 
+/* Section styles */
+.section {
+  padding: 80px 0;
+  scroll-margin-top: 80px; /* Offset for fixed navbar */
+}
+
+.section--hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 1));
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.section--features {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.section--about {
+  background-color: var(--kavia-dark);
+}
+
+.section--contact {
+  background-color: rgba(255, 255, 255, 0.03);
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: var(--kavia-orange);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hero section */
 .hero {
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 64px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -72,8 +99,8 @@ body {
 }
 
 .title {
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
   line-height: 1.2;
   margin: 0;
 }
@@ -86,6 +113,79 @@ body {
   margin-bottom: 16px;
 }
 
+/* Features section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.feature {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature__title {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--kavia-orange);
+}
+
+.feature__description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* About section */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+}
+
+/* Contact section */
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact__text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 24px 0;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Button styles */
 .btn {
   background-color: var(--kavia-orange);
   color: white;
@@ -95,14 +195,38 @@ body {
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn:hover {
   background-color: #FF8B4D;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 122, 65, 0.3);
 }
 
 .btn-large {
-  padding: 12px 24px;
+  padding: 14px 28px;
   font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .hero {
+    padding-top: 60px;
+    gap: 16px;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .section__title {
+    font-size: 2rem;
+  }
 }
